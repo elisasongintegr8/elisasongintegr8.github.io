@@ -26,9 +26,9 @@
 
     // Download the data
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson", function(resp) {
+        $.getJSON("http://p240179.mittwaldserver.info/biallo-mlab-data/histories.json", function(resp) {
             console.log(resp)
-            var feat = resp.features,
+            var feat = resp,
                 tableData = [];
 
             // Iterate over the JSON object
