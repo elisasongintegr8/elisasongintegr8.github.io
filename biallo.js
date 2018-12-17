@@ -31,7 +31,8 @@
     myConnector.getData = function(table, doneCallback) {
         var path = "http://p240179.mittwaldserver.info/biallo-mlab-data/histories.json"
     $.getJSON(path, function(resp) {
-        var data = resp.data,
+        console.log(resp)
+        var data = resp.text,
             tableData = [];
         tableau.log(tableData)
 
